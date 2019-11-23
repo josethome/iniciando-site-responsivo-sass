@@ -1,0 +1,20 @@
+{
+  "name": "html",
+  "homepage": "https://github.com/josethome/iniciando-site-responsivo-sass",
+  "authors": [
+    "Jose Thome <josethome.band@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
