@@ -18,7 +18,8 @@
     "bootstrap": "^4.3.1",
     "font-awesome": "^5.11.2",
     "bootstrap-sass": "^3.4.1",
-    "breakpoint-sass": "^2.7.1"
+    "breakpoint-sass": "^2.7.1",
+    "sass-flex-mixin": "^1.0.3"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
