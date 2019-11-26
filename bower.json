@@ -20,7 +20,8 @@
     "bootstrap-sass": "^3.4.1",
     "breakpoint-sass": "^2.7.1",
     "sass-flex-mixin": "^1.0.3",
-    "imagehover.css": "^2.0.0"
+    "imagehover.css": "^2.0.0",
+    "wow": "wowjs#^1.1.2"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",

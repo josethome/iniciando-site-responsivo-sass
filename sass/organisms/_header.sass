@@ -52,6 +52,19 @@ header
 						font-weight: bold    
     					line-height: 21px						
 						text-transform: uppercase 
+						
+						&:hover
+							&:after
+								width: 100%
+
+						&:after
+							content: ""
+							display: table
+							margin: 5px auto 0
+							width: 0%
+							height: 2px
+							background-color: orange
+							+transition(.3s)	
 
 		.social
 			li

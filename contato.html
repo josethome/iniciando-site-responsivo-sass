@@ -10,6 +10,7 @@
 
     <!-- Bootstrap SASS-CSS -->    
     <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
     <link rel="stylesheet" href="css/plugins.css">
     <link rel="stylesheet" href="css/contato.css"> 
     <!-- <link rel="stylesheet" href="bower_components/font-awesome/css/fontawesome.css"> --> 
@@ -19,14 +20,14 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="logo">
+			<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
 				<a href="index.html">
 					<img src="images/logo-portfolio.png" alt="Logotipo Portfólio">
 				</a>			
 			</div>
 
 			<div class="links">
-				<nav>
+				<nav class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s">
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="sobre.html">Sobre</a></li>
@@ -137,5 +138,18 @@
 			<p>Copyright &copy; 2019-2019 Portfólio - Criado por José A. Thomé - Todos os direitos reservados.</p>	
 		</div>		
 	</footer>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>	
+	<script>
+		$(function() {			
+			$('.toggle').click(function() {
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});
+			new WOW().init();			
+		});
+	</script>
 </body>
 </html>

@@ -11,6 +11,7 @@
     <!-- Bootstrap SASS-CSS -->    
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
     <link rel="stylesheet" href="css/portfolio.css"> 
     <!-- <link rel="stylesheet" href="bower_components/font-awesome/css/fontawesome.css"> --> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
@@ -19,14 +20,14 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="logo">
+			<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
 				<a href="index.html">
 					<img src="images/logo-portfolio.png" alt="Logotipo Portfólio">
 				</a>			
 			</div>
 
 			<div class="links">
-				<nav>
+				<nav class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s">
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="sobre.html">Sobre</a></li>
@@ -51,7 +52,7 @@
 		</div>	
 	</header>
 	<main>		
-		<section class="textos">
+		<section class="textos wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
 			<div class="container">
 				<h4> 
 					<i class="fa fa-quote-left fa-2x"></i>				
@@ -184,5 +185,13 @@
 			<p>Copyright &copy; 2019-2019 Portfólio - Criado por José A. Thomé - Todos os direitos reservados.</p>	
 		</div>		
 	</footer>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script>
+		$(function() {
+			new WOW().init();
+		});
+	</script>
 </body>
 </html>

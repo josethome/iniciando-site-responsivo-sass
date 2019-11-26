@@ -11,6 +11,7 @@
     <!-- Bootstrap SASS-CSS -->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">    
     <link rel="stylesheet" href="css/plugins.css">
     <!-- <link rel="stylesheet" href="bower_components/font-awesome/css/fontawesome.css"> --> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
@@ -28,14 +29,14 @@
 	<div class="layout"> 	
 		<header>
 			<div class="container">
-				<div class="logo">
+				<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
 					<a href="index.html">
 						<img src="images/logo-portfolio.png" alt="Logotipo Portfólio">
 					</a>			
 				</div>
 
 				<div class="links">
-					<nav>
+					<nav class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="sobre.html">Sobre</a></li>
@@ -45,8 +46,7 @@
 					</nav>
 
 					<!-- Menu togle -->
-					<a class="toggle" href="javascript:;">
-						<!-- <i class="fa fa-bars"></i> -->
+					<a class="toggle" href="javascript:;">						
 						<span></span>
 						<span></span>
 						<span></span>
@@ -71,23 +71,23 @@
 			<section class="sobre">
 				<div class="container">
 					<div class="itens">
-						<div class="foto">
+						<div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="5s">
 							<img src="images/foto-portfolio.png" alt="Foto desenvolvedor">
 						</div>
 
-						<div class="icone-lapis">
+						<div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
 							<i class="fa fa-pencil-alt"></i>
 						</div>
 
-						<div class="icone-codigo">
+						<div class="icone-codigo wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
 							<i class="fa fa-code"></i>
 						</div>
 
-						<div class="icone-motivacao">
+						<div class="icone-motivacao wow flipInX" data-wow-duration="1s" data-wow-delay="3s">
 							<i class="fa fa-heart"></i>
 						</div>
 
-						<div class="icone-compartilhar">
+						<div class="icone-compartilhar wow flipInX" data-wow-duration="1s" data-wow-delay="4s">
 							<i class="fa fa-share-alt"></i>
 						</div>
 					</div>
@@ -117,13 +117,15 @@
 	</div>
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>	
 	<script>
 		$(function() {			
 			$('.toggle').click(function() {
 				$('.layout').toggleClass('ativo');
 				$('.menu-responsivo').toggleClass('ativo');
 				$(this).toggleClass('ativo');
-			});			
+			});
+			new WOW().init();			
 		});
 	</script>
 </body>
