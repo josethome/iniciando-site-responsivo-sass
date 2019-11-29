@@ -1,58 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<title>Portfólio - Site responsivo e designer moderno</title>
-
-	<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
-
-    <!-- Bootstrap SASS-CSS -->    
-    <link rel="stylesheet" href="css/geral.css">
-    <link rel="stylesheet" href="css/plugins.css">
-    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
-    <link rel="stylesheet" href="css/portfolio.css"> 
-    <!-- <link rel="stylesheet" href="bower_components/font-awesome/css/fontawesome.css"> --> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-	<link rel="icone" href="images/portfolio.png">	
-</head>
-<body>
-	<header>
-		<div class="container">
-			<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
-				<a href="index.html">
-					<img src="images/logo-portfolio.png" alt="Logotipo Portfólio">
-				</a>			
-			</div>
-
-			<div class="links">
-				<nav class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portfolio.html">Portfólio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>				 			
-				</nav>
-
-				<ul class="social">
-					<li>
-						<a href="#"><i class="fab fa-facebook-f"></i></a>
-					</li>
-
-					<li>
-						<a href="#"><i class="fab fa-github-alt"></i></a> 
-					</li>
-				</ul>
-			</div>
-
-			<h2><strong></strong> Meus <strong>Trabalhos</strong></h2>
-			<p class="lead">Portfólio Web Designer</p>	
-		</div>	
-	</header>
-	<main>		
-		<section class="textos wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
+<section class="textos wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
 			<div class="container">
 				<h4> 
 					<i class="fa fa-quote-left fa-2x"></i>				
@@ -172,26 +118,4 @@
 					</li>
 				</ul>
 			</div>
-		</section>		
-	</main>
-	<footer>
-		<div class="logo-rodape">
-			<a href="index.html">
-				<img src="images/logo-portfolio.png" alt="Logotipo Portfólio">
-			</a>
-			<p>Horário de atendimento: segunda a sexta-feira
-				<strong> das </strong> 9:00h <strong> às </strong>  18:00h
-			</p>
-			<p>Copyright &copy; 2019-2019 Portfólio - Criado por José A. Thomé - Todos os direitos reservados.</p>	
-		</div>		
-	</footer>
-
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/wow/dist/wow.min.js"></script>
-	<script>
-		$(function() {
-			new WOW().init();
-		});
-	</script>
-</body>
-</html>
+		</section>	
