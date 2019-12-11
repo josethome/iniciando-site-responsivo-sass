@@ -60,6 +60,7 @@
 						<span></span>
 					</a>
 
+					<!-- Redes sociais -->
 					<ul class="social">
 						<li>
 							<a href="#"><i class="fab fa-facebook-f" title="Facebook"></i></a>
