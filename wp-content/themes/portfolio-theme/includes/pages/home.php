@@ -1,8 +1,8 @@
 <section class="sobre">
-	<div class="container">
+	<div class="container">		
 		<div class="itens">
 			<div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="5s">
-				<img src="<?php bloginfo('template_url'); ?>/images/foto-portfolio.png" alt="Foto desenvolvedor" title="Desenvolvedor José A. Thomé">
+				<img src="<?php bloginfo('template_url'); ?>/images/foto-portfolio.png" alt="Foto desenvolvedor front-end e freelancer">
 			</div>
 
 			<div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
