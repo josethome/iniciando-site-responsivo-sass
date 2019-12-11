@@ -1,7 +1,4 @@
-<?php
-	/*
-		template name: Contato
-	*/  
+<?php  
 	$style = 'contato';
 	$chamada = '<strong>Envie</strong> Seu <strong>Contato</strong>';
 	include('header.php');

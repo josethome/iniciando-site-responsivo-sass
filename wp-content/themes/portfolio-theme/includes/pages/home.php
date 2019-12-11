@@ -2,23 +2,23 @@
 	<div class="container">
 		<div class="itens">
 			<div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="5s">
-				<img src="<?php bloginfo('template_url'); ?>/images/foto-portfolio.png" alt="Foto desenvolvedor">
+				<img src="<?php bloginfo('template_url'); ?>/images/foto-portfolio.png" alt="Foto desenvolvedor" title="Desenvolvedor José A. Thomé">
 			</div>
 
 			<div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
-				<i class="fa fa-pencil-alt"></i>
+				<i class="fa fa-pencil-alt" title="Editar"></i>
 			</div>
 
 			<div class="icone-codigo wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
-				<i class="fa fa-code"></i>
+				<i class="fa fa-code" title="Codificar"></i>
 			</div>
 
 			<div class="icone-motivacao wow flipInX" data-wow-duration="1s" data-wow-delay="3s">
-				<i class="fa fa-heart"></i>
+				<i class="fa fa-heart" title="Paixão"></i>
 			</div>
 
 			<div class="icone-compartilhar wow flipInX" data-wow-duration="1s" data-wow-delay="4s">
-				<i class="fa fa-share-alt"></i>
+				<i class="fa fa-share-alt" title="Compartilhar"></i>
 			</div>
 		</div>
 
