@@ -5,7 +5,7 @@
 	margin-bottom: 40px
 
 	li
-		+make-sm-column(6)	
+		+make-sm-column(6)
 
 		h2
 			font-size: 20px
@@ -20,10 +20,10 @@
 					color: $azul
 
 				&.fa-wordpress 
-					color: #1a98e8
+					color: #1a98e8 
 
 				&.fa-git-square
-					color: $vermelho-git
+					color: $vermelho-git	
 	
 	@for $i from 0 through 10
 		li.habilidade-#{$i}
@@ -42,4 +42,4 @@
 			display: block
 			height: 100%
 			+border-radius(120px)
-			+gradient(90deg, $azul, $verde) 
+			+gradient(90deg, $azul, $verde)

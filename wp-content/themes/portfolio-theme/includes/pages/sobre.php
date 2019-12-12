@@ -5,32 +5,41 @@
 			</p> 					
 		</div>
 
+		<?php query_posts('post_type=habilidades&post_per_page=-1'); ?>		
+
 		<ul class="habilidades">
-			<li class="habilidade-8">
-				<h2>
-					<i class="fab fa-html5"></i><strong> HTML5</strong> // 80%
-					<div class="barra"><span></span></div>
-				</h2>
-			</li>
-			<li class="habilidade-5">
-				<h2>
-					<i class="fab fa-css3"></i><strong> CSS3</strong> // 50%
-					<div class="barra"><span></span></div>
-				</h2>
-			</li>
-			<li class="habilidade-7">
-				<h2>
-					<i class="fab fa-wordpress"></i><strong> Wordpress</strong> // 70%
-					<div class="barra"><span></span></div>
-				</h2>
-			</li>
-			<li class="habilidade-3">
-				<h2>
-					<i class="fab fa-git-square"></i><strong> Git</strong> // 30%
-					<div class="barra"><span></span></div>
-				</h2>
-			</li>
-		</ul>				
+
+			<?php if(have_posts()): ?>
+
+				<?php while(have_posts()): the_post(); ?>			
+
+			<li class="habilidade-<?php the_field('nivel'); ?>"> 
+					<h2>
+						<style>
+							.<?php the_field('icone'); ?> {
+								<?php if(get_field('cor_do_icone')): ?>
+									color: <?php the_field('cor_do_icone'); ?>;
+								<?php else : ?>
+									color: #000;
+								<?php endif; ?>
+							}
+						</style>
+						<i class="fab <?php the_field('icone'); ?>"></i> <strong><?php the_title(); ?></strong> // <?php the_field('nivel') ?>0%
+						<div class="barra"><span></span></div>
+					</h2>
+				</li>
+
+			<?php endwhile; ?>
+
+			<?php else : ?>
+
+				Não há habilidades cadastrada!
+
+			<?php endif; ?>
+
+		</ul>
+
+		<?php wp_reset_query(); ?> 					
 
 		<a href="#" class="botao medio">
 			<i class="fa fa-book"> Acessar Portfólio</i>

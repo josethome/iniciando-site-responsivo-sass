@@ -1,12 +1,12 @@
 <section class="sobre">
-	<div class="container">		
+	<div class="container">
 		<div class="itens">
 			<div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="5s">
-				<img src="<?php bloginfo('template_url'); ?>/images/foto-portfolio.png" alt="Foto desenvolvedor front-end e freelancer">
+				<img src="<?php bloginfo('template_url');  ?>/images/foto-portfolio.png" alt="Foto desenvolvedor" title="Desenvolvedor Front-end e Freelancer">
 			</div>
 
 			<div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
-				<i class="fa fa-pencil-alt" title="Editar"></i>
+				<i class="fa fa-pencil-alt" title="Fatoração"></i>
 			</div>
 
 			<div class="icone-codigo wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
