@@ -12,6 +12,7 @@ header
 		margin-top: 135px !important
 
 .contato
+
 	form 		
 		+clearfix
 		+make-sm-column(8)
@@ -41,11 +42,43 @@ header
 		select
 			height: 37px
 
-		button
+		input[type="submit"] 
 			background-color: transparent
+			text-transform: uppercase 			 		
 			color: orange
 			display: table
-			margin: 0 auto			
+			margin: 0 auto 
+
+		// button
+		// 	background-color: transparent
+		// 	color: orange
+		// 	display: table
+		// 	margin: 0 auto
+
+		textarea,
+		input
+			text-transform: none
+
+.anexo
+	label
+		margin: 3px
+
+.selecione-arquivo	
+	background-color: $laranja
+	width: 25%	
+	height: 40px					
+	position: relative		
+	cursor: pointer !important	
+
+	label		
+		padding: 12px 26px				 			  			
+
+.selecione-arquivo
+	input[type="file"] 
+		position: absolute		
+		width: 37px
+		height: 37px
+		opacity: 0							
 
 		.btn-success,
 		.btn-danger
@@ -54,7 +87,17 @@ header
 		.fale-comigo
 			margin: 50px 
 
-.cabecalho-msg
+.cabecalho-msg	
+	h1			
+		display: block	
+		margin: 50px 0 5px	
+		text-transform: uppercase
+		color: $preto					
+
+	h1		
+		width: 40px							
+		border-bottom: 6px solid #E58FAC			
+
 	h3
 		margin: 50px 0 0
-		color: $laranja  
+		color: $laranja 

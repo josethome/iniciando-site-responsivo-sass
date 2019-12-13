@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/plugins.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/bower_components/font-awesome/css/fontawesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-	<link rel="icone" href="<?php bloginfo('template_url'); ?>/images/portfolio.png">	
+	<link rel="icone" href="<?php bloginfo('template_url'); ?>/images/portfolio.png">
+
+	<?php wp_head(); ?>	
 </head>
 <body <?php body_class(); ?>>
 	
