@@ -1,7 +1,4 @@
 <?php 
-	// ATIVANDO SUPORTE A IMAGEM DESTACADA
-	add_theme_support('post-thumbnails');
-
 	// ATIVANDO MENUS DINÂMICOS
 	function register_my_menus() {
 		register_nav_menus(
@@ -29,3 +26,10 @@
 		);
 	}
 	add_action('init', 'meus_posts_types');
+
+	// TAMANHOS DINÂMICOS PARA AS IMAGENS: THUMBNAILS
+	function tamanhos_thumbs() {
+		add_theme_support('post-thumbnails');
+		add_image_size('portfolio-thumb', 265, 150, true);
+	}
+	add_action('after_setup_theme', 'tamanhos_thumbs');

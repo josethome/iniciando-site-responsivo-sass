@@ -5,6 +5,9 @@
 			</p> 					
 		</div>
 
+		<h1 class="titulo">Tecnologias habitualmente utilizadas em nossos projetos
+		</h1>
+
 		<?php query_posts('post_type=habilidades&post_per_page=-1'); ?>		
 
 		<ul class="habilidades">
@@ -29,7 +32,7 @@
 					</h2>
 				</li>
 
-			<?php endwhile; ?>
+			<?php endwhile; ?> 
 
 			<?php else : ?>
 
