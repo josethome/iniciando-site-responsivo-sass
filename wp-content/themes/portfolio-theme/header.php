@@ -6,10 +6,19 @@
 
 	<!-- Bootstrap SASS-CSS --> <!-- Link abaixo: chama o tema wordpress ativo -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/<?php echo $style; ?>.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/<?php global $style; echo $style; ?>.css">
    	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/geral.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/bower_components/wow/css/libs/animate.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/bower_components/lightbox2/dist/css/lightbox.min.css">	
+
+    <?php if(is_front_page()) : ?>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/bower_components/slick-carousel/slick/slick-theme.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/bower_components/slick-carousel/slick/slick.css">
+    <?php endif; ?>
+
+	<?php if(is_page('portfolio')) : ?>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/bower_components/lightbox2/dist/css/lightbox.min.css">
+	<?php endif; ?>
+
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/plugins.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/bower_components/font-awesome/css/fontawesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
@@ -65,9 +74,21 @@
 					</ul>
 				</div>
 
-				<h2><?php echo $chamada; ?></h2>
-				<!-- <h1><?php the_title(); ?></h1> -->
-				<p class="lead">Portfólio Web Designer</p>	
+				<div class="slide">	
+					<?php 
+						query_posts('post_type=slide');
+						while(have_posts()): the_post(); 
+					?>
+						<div class="item">						
+							<h2><?php echo $chamada; ?></h2>
+							<p class="lead"><?php the_content(); ?></p>
+						</div>					
+					<?php 
+						endwhile; 
+						wp_reset_query();
+					?>						
+				</div>
+				
 			</div>	
 		</header>
 		<main>
